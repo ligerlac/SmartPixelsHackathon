@@ -1,4 +1,4 @@
-root: data/1100fb/
+root: /data/ligerlac/17180303-small-mixed/1100fb/
 train:
 - [recon3D_sf1.parquet, labels_sf1.parquet]
 - [recon3D_sf2.parquet, labels_sf2.parquet]
