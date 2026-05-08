@@ -8,6 +8,7 @@ from utils import true_class_from_signed_pt, confusion_matrix_3, roc_curve_binar
 from plotting import plot_confusion, plot_roc, plot_prob_vs_pt, plot_acceptance_vs_pt
 import numpy as np
 
+
 MODEL_PATHS = ["output/baseline_model.pth", "output/370ifb_model.pth", "output/1100ifb_model.pth"]
 CONFIG_PATHS = ["config/baseline.yml", "config/370ifb.yml", "config/1100ifb.yml"]
 
