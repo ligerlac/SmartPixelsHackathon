@@ -125,7 +125,7 @@ def plot_acceptance_vs_pt(pt_true_signed: np.ndarray, pred_dict: dict[str, np.nd
     plt.ylabel(r"acceptance as $\it{high}$-$p_T$")
     plt.legend(loc="best", fontsize=8, framealpha=0.2)
     plt.show()
-    # plt.savefig(outpath, dpi=160)
+    #plt.savefig(outpath, dpi=160)
 
 
 
@@ -169,7 +169,7 @@ def plot_roc(rocs: Dict[str, Tuple[np.ndarray, np.ndarray, float]], outpath: Pat
     ax.grid(True, alpha=0.35)
     ax.legend(loc="lower right", fontsize=8, framealpha=0.2)
     plt.show()
-    # savefig(fig, outpath)
+    savefig(fig, outpath)
 
 
 def plot_prob_vs_pt(pt_true_signed: np.ndarray, p_high_by_model: Dict[str, np.ndarray], outpath: Path,
@@ -198,7 +198,7 @@ def plot_prob_vs_pt(pt_true_signed: np.ndarray, p_high_by_model: Dict[str, np.nd
     ax.grid(True, alpha=0.35)
     ax.legend(loc="best", fontsize=8, framealpha=0.2)
     plt.show()
-    # savefig(fig, outpath)
+    savefig(fig, outpath)
 
 
 def plot_acceptance_vs_pt(pt_true_signed: np.ndarray, pred_dict: dict[str, np.ndarray], outpath: Path):
@@ -230,5 +230,5 @@ def plot_acceptance_vs_pt(pt_true_signed: np.ndarray, pred_dict: dict[str, np.nd
     # plt.ylabel(r"acceptance as \textit{high-$p_T$}")
     plt.ylabel(r"acceptance as $\it{high}$-$p_T$")
     plt.legend(loc="best", fontsize=8, framealpha=0.2)
-    # plt.savefig(outpath, dpi=160)
+    plt.savefig(outpath, dpi=160)
     plt.show()
